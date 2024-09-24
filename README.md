@@ -33,13 +33,12 @@ Copy code
 - **Hardhat**: Installed globally for smart contract development.
 
 ### Clone the Repository
-```bash
+```
 git clone https://github.com/your-username/sustainable-product-nfts.git
 cd sustainable-product-nfts
 Backend Setup
 Navigate to the backend folder:
-bash
-Copy code
+
 cd backend
 Install dependencies:
 bash
