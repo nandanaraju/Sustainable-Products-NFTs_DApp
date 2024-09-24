@@ -38,10 +38,6 @@ cd ui
 ```bash
 npm install
 ```
-3.Start the development server:
-```bash
-npm run dev
-```
 ### Hardhat Setup (Smart Contracts)
 1.Navigate to the hardhat folder:
 
@@ -53,16 +49,34 @@ cd hardhat
 ```bash
 npm install
 ```
-3.Run a local Ethereum blockchain using Hardhat:
+### Running the Project
+1. Start the Hardhat Local Blockchain
+The Hardhat environment provides a local Ethereum blockchain for development and testing.
 
 ```bash
+cd hardhat
 npx hardhat node
 ```
-4.Compile and deploy the smart contracts:
+This command will start the local blockchain and display a list of accounts with their private keys. Keep this terminal window open as it runs the blockchain node.
+
+2. Deploy Smart Contracts
+In a new terminal window/tab, navigate to the hardhat directory and run the deployment script.
 
 ```bash
-npx hardhat compile
+cd hardhat
 npx hardhat run scripts/deploy.js --network localhost
+```
+This will deploy the smart contracts to the local Hardhat network. Note the contract address displayed after deployment.
+
+3. Configure the Frontend
+Ensure the frontend is aware of the deployed contract address. You may need to update environment variables or configuration files in the ui directory with the contract address and network details.
+
+4. Start the UI
+In another terminal window/tab, navigate to the ui directory and start the development server.
+
+```bash
+cd ui
+npm run dev
 ```
 
 
