@@ -37,7 +37,7 @@ This project is a decentralized application (DApp) that allows brands and users 
 ```bash
 git clone https://github.com/your-username/Sustainable-Products-NFTs_DApp.git
 cd Sustainable-Products-NFTs_DApp
-
+```
 ### Frontend Setup
 1.Navigate to the UI folder:
 ```bash
