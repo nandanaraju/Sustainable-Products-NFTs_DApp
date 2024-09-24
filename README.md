@@ -29,10 +29,40 @@ This project is a decentralized application (DApp) that allows brands and users 
 git clone https://github.com/your-username/Sustainable-Products-NFTs_DApp.git
 cd Sustainable-Products-NFTs_DApp
 ```
-### Backend Setup
-Navigate to the backend folder:
+### Frontend Setup
+1.Navigate to the UI folder:
 ```bash
-cd backend
+cd ui
+```
+2.Install dependencies:
+```bash
+npm install
+```
+3.Start the development server:
+```bash
+npm run dev
+```
+### Hardhat Setup (Smart Contracts)
+1.Navigate to the hardhat folder:
+
+```bash
+cd hardhat
+```
+2.Install dependencies:
+
+```bash
+npm install
+```
+3.Run a local Ethereum blockchain using Hardhat:
+
+```bash
+npx hardhat node
+```
+4.Compile and deploy the smart contracts:
+
+```bash
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network localhost
 ```
 
 
