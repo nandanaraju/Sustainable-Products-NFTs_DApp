@@ -117,7 +117,7 @@ QR codes play a crucial role in bridging the physical product with its digital N
 
 Check out our live demo! 🎬👇
 
-(https://drive.google.com/file/d/1zha20ZUstogCtIDknW9Yr-c0KW2WFasy/view?usp=sharing)
+https://youtu.be/5OHzwrdS9VA?feature=shared
 
 ---
 
