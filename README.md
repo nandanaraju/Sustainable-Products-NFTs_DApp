@@ -97,8 +97,13 @@ npm run dev
 ## QR Code Integration
 QR codes play a crucial role in bridging the physical product with its digital NFT counterpart. Here's how it's integrated:
 
-**Generation**: After minting an NFT for a product, a unique QR code is generated using the product's IPFS hash or blockchain address.
-**Embedding**: The QR code is attached to the physical product, allowing consumers to easily scan and access product information.
-**Verification**: Scanning the QR code fetches the NFT data from IPFS and the Ethereum blockchain, ensuring the product's authenticity and sustainability claims.
+-**Generation**: After minting an NFT for a product, a unique QR code is generated using the product's IPFS hash or blockchain address.
+-**Embedding**: The QR code is attached to the physical product, allowing consumers to easily scan and access product information.
+-**Verification**: Scanning the QR code fetches the NFT data from IPFS and the Ethereum blockchain, ensuring the product's authenticity and sustainability claims.
 
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
