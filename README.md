@@ -79,4 +79,26 @@ cd ui
 npm run dev
 ```
 
+### Usage
+1.Adding a Product
+**Connect Wallet**: Use a Web3 wallet (e.g., MetaMask) to connect to the application. Ensure it's connected to the local Hardhat network.
+
+**Add Product**: Navigate to the "Add Product" section and fill in the necessary details about the sustainable product.
+
+**Mint NFT**: Submit the form to mint an NFT representing the product. This action will store the product data on IPFS and create a corresponding NFT on the Ethereum blockchain.
+
+**Generate QR Code**: Once minted, a QR code will be generated for the product. This QR code links to the NFT data stored on IPFS.
+
+2.Viewing Product Details
+**Scan QR Code**: Use a QR code scanner to scan the product's QR code.
+
+**Access Data**: The scanner will redirect to the product's NFT data, displaying all relevant sustainability information stored on the blockchain and IPFS.
+
+### QR Code Integration
+QR codes play a crucial role in bridging the physical product with its digital NFT counterpart. Here's how it's integrated:
+
+**Generation**: After minting an NFT for a product, a unique QR code is generated using the product's IPFS hash or blockchain address.
+**Embedding**: The QR code is attached to the physical product, allowing consumers to easily scan and access product information.
+**Verification**: Scanning the QR code fetches the NFT data from IPFS and the Ethereum blockchain, ensuring the product's authenticity and sustainability claims.
+
 
