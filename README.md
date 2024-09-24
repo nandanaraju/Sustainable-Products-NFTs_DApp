@@ -49,7 +49,7 @@ cd hardhat
 ```bash
 npm install
 ```
-### Running the Project
+## Running the Project
 1. Start the Hardhat Local Blockchain
 The Hardhat environment provides a local Ethereum blockchain for development and testing.
 
@@ -79,7 +79,7 @@ cd ui
 npm run dev
 ```
 
-### Usage
+## Usage
 1.Adding a Product
 **Connect Wallet**: Use a Web3 wallet (e.g., MetaMask) to connect to the application. Ensure it's connected to the local Hardhat network.
 
@@ -94,7 +94,7 @@ npm run dev
 
 **Access Data**: The scanner will redirect to the product's NFT data, displaying all relevant sustainability information stored on the blockchain and IPFS.
 
-### QR Code Integration
+## QR Code Integration
 QR codes play a crucial role in bridging the physical product with its digital NFT counterpart. Here's how it's integrated:
 
 **Generation**: After minting an NFT for a product, a unique QR code is generated using the product's IPFS hash or blockchain address.
