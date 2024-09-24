@@ -1,78 +1,56 @@
-# SUSTAINABLE PRODUCT NFTs - README
 
-## Overview
+SUSTAINABLE PRODUCT NFTs
+This project demonstrates a decentralized platform that allows users to add product-related data to the blockchain. The product data is stored and accessed via QR codes, and consumers can scan these QR codes to retrieve information stored securely on the blockchain using IPFS NFTs. This DApp ensures transparency, immutability, and security for all product information.
 
-This project is a decentralized application (DApp) that allows brands and users to register and add sustainable products to the Ethereum blockchain. The product details are stored as NFTs on IPFS, and each product is associated with a QR code that consumers can scan to verify its authenticity and sustainability claims. This ensures transparency, trust, and verifiability of product information.
-
-## Key Features
-- **Add Sustainable Products**: Users can register products on the blockchain, which are stored as Non-Fungible Tokens (NFTs).
-- **QR Code Generation**: Each product is associated with a unique QR code that consumers can scan to view the product details on the blockchain.
-- **Blockchain-based Storage**: Product data is stored in a decentralized manner using IPFS and Ethereum, ensuring tamper-proof and verifiable records.
-- **Token-Based Authentication**: Secure login system using tokens for authentication.
-- **MetaMask Integration**: Users can connect their MetaMask wallet for secure account management and interaction with the platform.
-
-## Tech Stack
-- **Smart Contracts (Solidity)**: Ethereum smart contracts handle product registration, verification, and NFT minting.
-- **Hardhat**: Development environment for compiling, deploying, and testing smart contracts.
-- **Frontend (React.js)**: A React-based user interface for product management and QR code interactions.
-- **Backend (Node.js & Express)**: A backend server to handle authentication and interact with the Ethereum blockchain.
-- **IPFS**: Used for decentralized storage of product data.
-
-## Project Structure
-
-/hardhat - Smart contracts and blockchain-related scripts. /ui - React.js application for the client-side of the DApp. /backend - Node.js server for API and token-based authentication.
-
-markdown
+Key Features
+Add Product to Blockchain: Users can upload product data, and it is permanently stored on the blockchain and associated with a unique NFT.
+QR Code Generation: Each product's data is linked with a QR code for easy access by consumers.
+Scan and View Product Data: Consumers can scan the QR code to view the product details stored on the blockchain.
+Blockchain-based Storage: Product data is stored on IPFS (InterPlanetary File System) and verified via the Ethereum blockchain.
+MetaMask Integration: Users authenticate and interact with the DApp through their MetaMask wallet, ensuring secure access.
+Token-Based Authentication: Secure login and product interactions are authenticated using tokens.
+Tech Stack
+Smart Contracts (Solidity): The smart contracts are responsible for adding products, managing product data, and storing the associated NFTs on the blockchain.
+Hardhat: A development environment to compile, deploy, and test Ethereum smart contracts.
+IPFS: Decentralized storage system used for product data storage.
+Frontend (React.js): User-friendly interface built with React.js that interacts with smart contracts and IPFS.
+Backend (Node.js & Express): Backend server to handle API requests and interactions with smart contracts.
+MetaMask: Wallet integration to sign transactions and authenticate users.
+Project Structure
+bash
 Copy code
-
-## Setup Instructions
-
-### Prerequisites
-- **Node.js**: Ensure you have Node.js installed.
-- **MetaMask**: MetaMask wallet extension installed in your browser.
-- **Hardhat**: Installed globally for smart contract development.
-
-### Clone the Repository
-```
+sustainable-product-nfts/
+├── hardhat/     # Contains the smart contracts and blockchain-related scripts
+│   ├── contracts/
+│   ├── scripts/
+│   └── test/
+├── ui/          # React.js application for the client-side of the DApp
+│   ├── public/
+│   ├── src/
+│   └── components/
+Setup Instructions
+Prerequisites
+Node.js: Ensure you have Node.js installed on your machine.
+MetaMask: MetaMask wallet extension installed in your browser.
+Hardhat: Install Hardhat globally to compile and deploy smart contracts.
+IPFS: You will need IPFS installed for decentralized storage.
+Clone the Repository
+bash
+Copy code
 git clone https://github.com/your-username/sustainable-product-nfts.git
 cd sustainable-product-nfts
-Backend Setup
-Navigate to the backend folder:
-
-cd backend
-Install dependencies:
-bash
-Copy code
-npm install
-Start the backend server:
-bash
-Copy code
-npm start
-Frontend Setup
-Navigate to the UI folder:
-bash
-Copy code
-cd ui
-Install dependencies:
-bash
-Copy code
-npm install
-Start the development server:
-bash
-Copy code
-npm run dev
-Hardhat Setup (Smart Contracts)
+Backend Setup (Hardhat)
 Navigate to the hardhat folder:
 
 bash
 Copy code
 cd hardhat
-Install dependencies:
+Install the dependencies:
 
 bash
 Copy code
 npm install
-Run a local Ethereum blockchain using Hardhat:
+Start a local Ethereum blockchain using Hardhat:
 
 bash
 Copy code
@@ -83,38 +61,57 @@ bash
 Copy code
 npx hardhat compile
 npx hardhat run scripts/deploy.js --network localhost
-Connecting Frontend to Backend
-Make sure both the frontend and backend are running on their respective ports, and the blockchain is running locally via Hardhat. The frontend will automatically interact with the backend and blockchain.
+Frontend Setup (React.js)
+Navigate to the ui folder:
+
+bash
+Copy code
+cd ../ui
+Install dependencies:
+
+bash
+Copy code
+npm install
+Start the frontend development server:
+
+bash
+Copy code
+npm run dev
+The frontend will run on http://localhost:3000.
+
+Connecting the Frontend to Backend
+Ensure the local blockchain (Hardhat) is running, and then start both the frontend and backend. The frontend will automatically interact with the blockchain via MetaMask.
 
 Usage
-MetaMask Connection: Open the frontend in your browser, and you'll be prompted to connect your MetaMask wallet.
-Signup/Login: Once connected, you can sign up using your MetaMask wallet, and token-based authentication will secure your session.
-Add Products: Register sustainable products on the blockchain and mint an NFT representing each product.
-QR Code Generation: A unique QR code is generated for each product, which links to the product's data stored on IPFS.
-View Product Details: Consumers can scan the QR code to access product details and verify its authenticity on the blockchain.
+MetaMask Wallet Connection: When you open the frontend in your browser, connect your MetaMask wallet.
+Add Product: Use the form to upload product information, mint the NFT, and store data on IPFS.
+Scan QR Code: Consumers can scan the QR code to access product data from the blockchain.
 Scripts
-Backend: Start the server
-
-bash
-Copy code
-cd backend && npm start
-Frontend: Start the development server
-
-bash
-Copy code
-cd ui && npm run dev
-Hardhat: Run local Ethereum blockchain
+Backend (Hardhat): Run a local Ethereum blockchain
 
 bash
 Copy code
 cd hardhat && npx hardhat node
+Frontend: Start the frontend development server
+
+bash
+Copy code
+cd ui && npm run dev
+Deploy Smart Contracts: Deploy the smart contracts to the blockchain
+
+bash
+Copy code
+cd hardhat && npx hardhat run scripts/deploy.js --network localhost
 🎥 Demo Video
 Check out our live demo! 🎬👇
 
-(https://drive.google.com/file/d/your-demo-video-link/view?usp=sharing)
+Watch Demo
 
 Contributing
 Feel free to fork this repository and submit pull requests. Contributions and improvements are always welcome!
 
 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Enjoy building sustainable products on the blockchain with this decentralized platform!
+
